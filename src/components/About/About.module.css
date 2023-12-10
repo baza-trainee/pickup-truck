@@ -11,12 +11,18 @@
 }
 
 .aboutWrapper {
+    max-width: 320px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+        min-width: 688px;
+    }
+
     @media (min-width: 1280px) {
         display: flex;
-        width: 1120px;
+        max-width: 1120px;
         height: 767px;
         justify-content: space-between;
-        margin: 0 auto;
     }
 }
 

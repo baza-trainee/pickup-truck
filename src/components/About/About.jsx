@@ -47,7 +47,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* <Link to=''><Button/></Link> */}
+{/* <Link to=''><Button/></Link> */}
     </section>
   );
 };
