@@ -1,0 +1,74 @@
+.modalBox {
+	max-width: 556px;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 56px;
+	padding-bottom: 40px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.title {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.8;
+	letter-spacing: 0.35px;
+	text-align: center;
+	padding-bottom: 16px;
+}
+
+.line {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	border: 1px solid var(--ligth-grey);
+}
+
+.text,
+.textCopy {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 2;
+	letter-spacing: 0.35px;
+	text-align: center;
+	padding-left: 110px;
+	padding-right: 110px;
+}
+
+.text {
+	margin-bottom: 32px;
+}
+
+.subTitle {
+	padding-top: 40px;
+}
+
+.list {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+	margin-bottom: 32px;
+}
+
+.linkCopy {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.2;
+	border-bottom: 1px solid var(--yellow);
+	max-width: 300px;
+	padding-bottom: 4px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.textCopy {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 32px;
+}
