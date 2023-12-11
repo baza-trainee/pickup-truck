@@ -11,18 +11,18 @@
 }
 
 .aboutWrapper {
-    max-width: 320px;
     margin: 0 auto;
+    width: 288px;
 
     @media (min-width: 768px) {
-        min-width: 688px;
+        width: 688px;
     }
 
     @media (min-width: 1280px) {
         display: flex;
-        max-width: 1120px;
-        height: 767px;
+        max-height: 767px;
         justify-content: space-between;
+        width: 1120px;
     }
 }
 
@@ -69,7 +69,7 @@
     flex-direction: column;
 
     @media (min-width: 1280px) {
-        width: 550px;
+       width: 550px;
     }
 }
 
@@ -87,13 +87,10 @@
     display: block;
     margin: 0 auto 24px;
     border-radius: 40px;
-    max-width: 288px;
+    width: 100%;
     height: auto;
 
     @media (min-width: 768px) {
-        max-width: unset;
-        width: 688px;
-        height: 505px;
         order: 2;
         margin: 16px auto;
     }
@@ -101,7 +98,7 @@
     @media (min-width: 1280px) {
         width: 550px;
         height: 403px;
-        margin: auto 0 0 0;
+        margin: 24px 0 0 0;
     }
 }
 
@@ -128,20 +125,15 @@
     display: block;
     margin: 24px auto;
     border-radius: 40px;
-    max-width: 288px;
+    width: 100%;
     height: auto;
 
     @media (min-width: 768px) {
-        max-width: unset;
-        width: 688px;
-        height: 505px;
         order: 2;
         margin: 16px auto 0;
     }
 
     @media (min-width: 1280px) {
-        width: 550px;
-        height: 403px;
         margin: auto 0 0 0;
     }
 }
