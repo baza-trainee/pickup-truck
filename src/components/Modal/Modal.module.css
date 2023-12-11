@@ -1,0 +1,35 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--black-background);
+	z-index: 999;
+}
+
+.modal {
+	position: relative;
+	margin: 0 auto;
+	background-color: var(--white-background);
+	border-radius: 8px;
+	overflow-y: auto;
+}
+
+.btnClose {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	color: var(--black);
+	transition-property: color;
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+.btnClose:hover,
+.btnClose:focus {
+	color: var(--yellow);
+}
