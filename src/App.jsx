@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Important from "./components/Important/Important";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import SectionStrength from "./components/SectionStrength/SectionStrength";
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Important />
       <SectionStrength />
       <Footer />
+      <ScrollToTop />
     </>
   );
 };
