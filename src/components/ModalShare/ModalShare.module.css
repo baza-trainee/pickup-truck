@@ -1,20 +1,35 @@
 .modalBox {
-	max-width: 556px;
+	max-width: 288px;
 	height: auto;
 	margin: 0 auto;
-	padding-top: 56px;
+	padding-top: 32px;
 	padding-bottom: 40px;
 	padding-left: 16px;
 	padding-right: 16px;
 }
 
+@media screen and (min-width: 768px) {
+	.modalBox {
+		max-width: 556px;
+	}
+}
+
 .title {
 	font-size: 20px;
-	font-weight: 600;
-	line-height: 1.8;
-	letter-spacing: 0.35px;
+	line-height: 1.2;
 	text-align: center;
-	padding-bottom: 16px;
+	padding-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+	.title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.8;
+		letter-spacing: 0.35px;
+		text-align: center;
+		padding-bottom: 16px;
+	}
 }
 
 .line {
@@ -26,49 +41,119 @@
 
 .text,
 .textCopy {
-	font-size: 18px;
-	font-weight: 600;
-	line-height: 2;
-	letter-spacing: 0.35px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.7;
 	text-align: center;
-	padding-left: 110px;
-	padding-right: 110px;
+}
+
+@media screen and (min-width: 768px) {
+
+	.text,
+	.textCopy {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 2;
+		letter-spacing: 0.35px;
+	}
 }
 
 .text {
-	margin-bottom: 32px;
+	margin-bottom: 18px;
+}
+
+@media screen and (min-width: 768px) {
+	.text {
+		margin-bottom: 32px;
+		padding-left: 110px;
+		padding-right: 110px;
+	}
+}
+
+.textCopy {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 767.98px) {
+	.textCopy {
+		max-width: 188px;
+		gap: 4px;
+		margin-top: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.textCopy {
+		max-width: 276px;
+		gap: 8px;
+		margin-top: 32px;
+	}
 }
 
 .subTitle {
-	padding-top: 40px;
+	padding-top: 16px;
+}
+
+@media screen and (min-width: 768px) {
+	.subTitle {
+		padding-top: 40px;
+	}
 }
 
 .list {
 	list-style: none;
 	display: flex;
 	justify-content: center;
-	gap: 32px;
-	margin-bottom: 32px;
+	gap: 16px;
+	margin-bottom: 18px;
+}
+
+@media screen and (min-width) {
+	.list {
+		gap: 32px;
+		margin-bottom: 32px;
+	}
+}
+
+.item {
+	transition: var(--transition);
+}
+
+.item:hover,
+.item:focus {
+	transform: scale(1.1);
 }
 
 .linkCopy {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 8px;
-	font-size: 20px;
-	font-weight: 700;
-	line-height: 1.2;
+	gap: 4px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.25;
 	border-bottom: 1px solid var(--yellow);
-	max-width: 300px;
 	padding-bottom: 4px;
+	max-width: 244px;
 	margin: 0 auto;
 	cursor: pointer;
+	transition: var(--transition);
 }
 
-.textCopy {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-	margin-top: 32px;
+.linkCopy:hover,
+.linkCopy:focus {
+	transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+	.linkCopy {
+		gap: 8px;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.2;
+		max-width: 300px;
+	}
 }
