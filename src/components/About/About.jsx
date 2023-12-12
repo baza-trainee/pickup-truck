@@ -1,5 +1,3 @@
-// import Button from '../Button/Button';
-// import { Link } from "react-router-dom";
 import aboutFirst from "../../assets/About/about-img-1.webp";
 import aboutSecond from "../../assets/About/about-img-2.webp";
 import styles from "./About.module.css";
@@ -34,11 +32,11 @@ const About = () => {
             alt="Brigade photo"
             className={styles.aboutSecondImage}
           />
-          <div className={styles.aboutSecondBlock}>
+          <div className={styles.aboutSecondBlockText}>
             <p className={styles.aboutText}>
               В січні 2023 року 9й полк було реорганізовано у 15 бригаду
-              оперативного призначення імені Богдана Завади, яка увійшла у список
-              бригад "Гвардії наступу".
+              оперативного призначення імені Богдана Завади, яка увійшла у
+              список бригад "Гвардії наступу".
             </p>
             <p className={styles.aboutText}>
               Зараз бійці бригади мужньо та стійко стримують навалу агресора й
@@ -47,7 +45,13 @@ const About = () => {
           </div>
         </div>
       </div>
-{/* <Link to=''><Button/></Link> */}
+      <a
+        href="https://send.monobank.ua/jar/vuWRhTsv5"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button type="button" className={styles.aboutButton}>Донат на пікап</button>
+      </a>
     </section>
   );
 };
