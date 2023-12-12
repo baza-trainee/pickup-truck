@@ -1,0 +1,37 @@
+.btn {
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	gap: 8px;
+	border-radius: 40px;
+	border: none;
+	background-color: var(--yellow);
+	box-shadow: var(--box-shadow);
+	transition-property: background-color;
+	transition: background-color var(--transition);
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: var(--orange);
+}
+
+@media screen and (max-width: 767.98px) {
+	.btn {
+		min-width: 288px;
+		padding: 12px 0;
+		font-size: 16px;
+		line-height: 1.25;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.btn {
+		min-width: 265px;
+		padding: 20px 0;
+		font-size: 18px;
+	}
+}
