@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
 
-import { IoCloseOutline } from "react-icons/io5";
-
 import styles from "./Modal.module.css";
 
 const modalRoot = document.querySelector("#modal-root");
@@ -22,10 +20,7 @@ const Modal = ({ close, children }) => {
 
   return createPortal(
     <div className={styles.overlay} onClick={handleClose}>
-      <div className={styles.modal}>
-        <IoCloseOutline className={styles.btnClose} onClick={close} size={24} />
-        {children}
-      </div>
+      <div className={styles.modal}>{children}</div>
     </div>,
     modalRoot
   );

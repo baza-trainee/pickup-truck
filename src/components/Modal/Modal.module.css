@@ -8,25 +8,99 @@
 	justify-content: center;
 	align-items: center;
 	background-color: var(--black-background);
-	z-index: 999;
+	/* opacity: 1;
+	visibility: visible;
+	pointer-events: auto; */
+	overflow-y: auto;
+	z-index: 100;
+
+	/* transition-property: opacity, visibility;
+	transition: opacity var(--transition), visibility var(--transition); */
 }
+
+/* .overlay.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+} */
+
+/* .backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 93px 15px 94px;
+	z-index: 100;
+	overflow-y: scroll;
+	background-color: var(--overlay-background-color);
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+
+	transition-property: opacity, visibility;
+	transition: opacity var(--transition-duration-function), visibility var(--transition-duration-function);
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+} */
 
 .modal {
 	position: relative;
 	margin: 0 auto;
 	background-color: var(--white-background);
 	border-radius: 8px;
-	overflow-y: auto;
+	overflow: hidden;
+	/* transform: scale(1);
+	transition-property: transform;
+	transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
+
+/* .overlay.is-hidden .modal {
+	transform: scale(1.1);
+} */
+
+/* .modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	padding: 40px;
+	border-radius: 4px;
+	background-color: var(--modal-background-color);
+	transform: translate(-50%, -50%) scale(1);
+	transition-property: transform;
+	transition: transform var(--transition-duration-function);
+
+	.backdrop.is-hidden & {
+		transform: translate(-50%, -50%) scale(1.1);
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.modal {
+		width: 95%;
+	}
+} */
 
 .btnClose {
 	position: absolute;
 	top: 16px;
 	right: 16px;
-	color: var(--black);
 	transition-property: color;
 	transition: var(--transition);
 	cursor: pointer;
+}
+
+.btnCloseIsShare {
+	color: var(--black);
+}
+
+.btnCloseThanks {
+	color: var(--white);
 }
 
 .btnClose:hover,
