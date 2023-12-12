@@ -16,9 +16,6 @@ const SectionStrength = () => {
             Поділитися
             <GoShareAndroid size={24} />
           </Button>
-
-          <br />
-          <Button>Донат</Button>
         </Container>
       </section>
     </>
