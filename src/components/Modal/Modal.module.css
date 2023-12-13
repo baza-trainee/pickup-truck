@@ -1,0 +1,43 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--black-background);
+	overflow-y: auto;
+	z-index: 100;
+}
+
+.modal {
+	position: relative;
+	margin: 0 auto;
+	background-color: var(--white-background);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.btnClose {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	transition-property: color;
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+.btnCloseIsShare {
+	color: var(--black);
+}
+
+.btnCloseThanks {
+	color: var(--white);
+}
+
+.btnClose:hover,
+.btnClose:focus {
+	color: var(--yellow);
+}
