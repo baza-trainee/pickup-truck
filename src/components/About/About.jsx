@@ -1,3 +1,4 @@
+import Button from '../Button/Button'
 import aboutFirst from "../../assets/About/about-img-1.webp";
 import aboutSecond from "../../assets/About/about-img-2.webp";
 import styles from "./About.module.css";
@@ -49,8 +50,9 @@ const About = () => {
         href="https://send.monobank.ua/jar/vuWRhTsv5"
         target="_blank"
         rel="noopener noreferrer"
+        className={styles.aboutButton}
       >
-        <button type="button" className={styles.aboutButton}>Донат на пікап</button>
+        <Button>ДОНАТ НА ПІКАП</Button>
       </a>
     </section>
   );
