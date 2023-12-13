@@ -1,0 +1,221 @@
+.hero {
+  background: linear-gradient(rgba(20, 20, 21, 0.7), rgba(20, 20, 21, 0.7)),
+    url("../../assets/Hero/hero-img.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  position: relative;
+  padding: 61px 16px;
+  color: var(--white);
+  letter-spacing: 0.35px;
+}
+
+.content::before,
+.content::after {
+  content: "";
+  width: 8px;
+  height: 80px;
+  position: absolute;
+  left: -5px;
+}
+
+.content::before {
+  background-color: var(--blue);
+  top: 60px;
+}
+
+.content::after {
+  background-color: var(--yellow);
+  top: 140px;
+}
+
+@media screen and (min-width: 768px){
+  .content {
+    padding: 100px 16px 67px;
+  }
+  .content::before,
+  .content::after {
+    width: 13px;
+    height: 113px;
+    left: -11px;
+  }
+
+  .content::before {
+    top: 115px;
+  }
+
+  .content::after {
+    top: 228px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .content {
+    padding: 212px 20px 177px;
+  }
+  .content::before,
+  .content::after {
+    width: 22px;
+    height: 136px;
+    left: -25px;
+  }
+
+  .content::before {
+    top: 230px;
+  }
+
+  .content::after {
+    top: 366px;
+  }
+}
+
+.title {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+@media screen and (min-width: 768px){
+  .title {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 28px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+}
+
+.subTitle {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px){
+  .subTitle {
+    font-size: 32px;
+    font-family: "Russo One", sans-serif;
+    margin-bottom: 22px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .subTitle {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.goal {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.16;
+  margin-bottom: 16px;
+}
+
+.sum {
+  color: var(--yellow);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+.goal span:first-child {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 768px){
+  .goal {
+    font-size: 24px;
+  }
+
+  .sum {
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+   }
+
+  .goal span:first-child {
+    margin-left: 29px;
+    margin-right: 29px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .goal {
+   margin-bottom: 40px;
+  }
+   }
+
+.description {
+  max-width: 489px;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px){
+  .description {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 46px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .description {
+   margin-bottom: 66px;
+  }
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  width: 288px;
+  margin-left: -16px;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 40px;
+  background: var(--yellow);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px 67px;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+  background: var(--orange);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+@media screen and (min-width: 768px) { 
+  .button {
+    width: 265px;
+    margin-left: -20px;
+    font-size: 18px;
+    padding: 21px 46px;
+     }
+}
+
+@media screen and (min-width: 1280px) {
+  .button {
+    margin-left: -40px;
+      }
+}

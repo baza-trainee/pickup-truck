@@ -1,0 +1,64 @@
+.runningBlock {
+  display: flex;
+  gap: 56px;
+  text-align: center;
+  width: 101%;
+  padding: 26px 28px;
+  background-color: var(--grey);
+  white-space: nowrap;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .runningBlock {
+    padding: 36px 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .runningBlock {
+    padding: 47px 28px;
+  }
+}
+.runningText {
+  font-family: "Russo One", sans-serif;
+  color: var(--white);
+  font-size: 24px;
+  line-height: 1.16;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .runningText {
+    font-size: 32px;
+    line-height: 0.9;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .runningText {
+    font-size: 40px;
+  }
+}
+.runningText::before {
+  content: "";
+  top: -2px;
+  left: -30px;
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-color: var(--white);
+  display: inline-block;
+}
+@media screen and (min-width: 768px) {
+  .runningText::before {
+    top: -8px;
+    height: 39px;
+    width: 5px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .runningText::before {
+    height: 46px;
+    width: 5px;
+  }
+}
