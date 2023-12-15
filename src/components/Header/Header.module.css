@@ -28,6 +28,7 @@
 .NavMenu li:hover,
 .NavMenu li:focus{
     color: #FFCC00;
+    cursor: pointer;
 }
 .burgerMenuOpen {
     font-size: 24px;
