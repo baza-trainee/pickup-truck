@@ -12,25 +12,29 @@
     pointer-events: none;
     transform: translateX(100%);
     transition-property: opasity, visibility, transform;
-    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility  250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mobileMenu.isOpen {
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
     transform: translateX(0);
 }
+
 .mobileMenuContainer {
     position: relative;
     height: 100%;
     padding-top: 60px;
 }
-@media screen and (min-width: $tablet) and (max-width: $desktop) {
-    .mobileMenuContainer{
+
+@media (min-width: 1280px) {
+    .mobileMenuContainer {
         padding-top: 56px;
     }
 }
+
 .mobileMenuCLoseBtn {
     position: absolute;
     top: 16px;
@@ -43,22 +47,27 @@
     transition-property: color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .mobileMenuCLoseBtn:hover,
-.mobileMenuCLoseBtn:focus{
+.mobileMenuCLoseBtn:focus {
     color: #FFCC00;
 }
+
 .list {
     display: flex;
     flex-direction: column;
 }
+
 .item:not(:last-child) {
     margin-bottom: 24px;
 }
+
 @media screen (min-width: 1280px) {
-    .item:not(:last-child){
+    .item:not(:last-child) {
         margin-bottom: 22px;
     }
 }
+
 .link {
     display: block;
     padding-left: 10px;
@@ -71,12 +80,14 @@
     transition-property: color;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .link:hover,
-.link:focus{
+.link:focus {
     color: #FFCC00;
 }
+
 @media (min-width: 1280px) {
-    .link{
+    .link {
         font-size: 18px;
     }
-  }
+}
