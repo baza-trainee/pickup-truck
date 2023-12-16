@@ -1,8 +1,8 @@
-import React from 'react'
-import { Link } from 'react-scroll';
-import { AiOutlineClose } from 'react-icons/ai';
-import Container from '../../Container/Container';
-import styles from './MobileMenu.module.css';
+import React from "react";
+import { Link } from "react-scroll";
+import { AiOutlineClose } from "react-icons/ai";
+import Container from "../../Container/Container";
+import styles from "./MobileMenu.module.css";
 
 const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
   return (
@@ -69,7 +69,7 @@ const MobileMenu = ({ setIsOpenMobileMenu, isOpenMobileMenu }) => {
         </nav>
       </Container>
     </div>
-  )
-}
+  );
+};
 
-export default MobileMenu
+export default MobileMenu;
