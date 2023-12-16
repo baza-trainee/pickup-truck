@@ -1,29 +1,10 @@
 .about {
     padding: 64px 16px 56px;
-
-    @media (min-width: 768px) {
-        padding: 80px 40px;
-    }
-
-    @media (min-width: 1280px) {
-        padding: 100px 80px;
-    }
 }
 
 .aboutWrapper {
     margin: 0 auto;
     width: 288px;
-
-    @media (min-width: 768px) {
-        width: 688px;
-    }
-
-    @media (min-width: 1280px) {
-        display: flex;
-        max-height: 767px;
-        justify-content: space-between;
-        width: 1120px;
-    }
 }
 
 .aboutTitle {
@@ -35,20 +16,6 @@
     line-height: 27px;
     margin-bottom: 32px;
     text-align: center;
-
-    @media (min-width: 768px) {
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 36px;
-        letter-spacing: 0.35px;
-        margin-bottom: 40px;
-    }
-
-    @media (min-width: 1280px) {
-        font-size: 40px;
-        font-weight: 700;
-        margin-bottom: 80px;
-    }
 }
 
 .aboutText {
@@ -57,30 +24,17 @@
     font-weight: 600;
     line-height: 32px;
     letter-spacing: 0.35px;
-
-    @media (min-width: 768px) {
-        font-size: 18px;
-        line-height: 36px;
-    }
 }
 
 .aboutFirstBlock {
     display: flex;
     flex-direction: column;
-
-    @media (min-width: 1280px) {
-        width: 550px;
-    }
 }
 
 .aboutFirstBlockText {
     display: flex;
     flex-direction: column;
     gap: 16px;
-
-    @media (min-width: 768px) {
-        order: 1;
-    }
 }
 
 .aboutFirstImage {
@@ -89,36 +43,17 @@
     border-radius: 40px;
     width: 100%;
     height: auto;
-
-    @media (min-width: 768px) {
-        order: 2;
-        margin: 16px auto;
-    }
-
-    @media (min-width: 1280px) {
-        width: 550px;
-        height: 403px;
-        margin: 24px 0 0 0;
-    }
 }
 
 .aboutSecondBlock {
     display: flex;
     flex-direction: column;
-
-    @media (min-width: 1280px) {
-        width: 550px;
-    }
 }
 
 .aboutSecondBlockText {
     display: flex;
     flex-direction: column;
     gap: 16px;
-
-    @media (min-width: 768px) {
-        order: 1;
-    }
 }
 
 .aboutSecondImage {
@@ -127,27 +62,96 @@
     border-radius: 40px;
     width: 100%;
     height: auto;
-
-    @media (min-width: 768px) {
-        order: 2;
-        margin: 16px auto 0;
-    }
-
-    @media (min-width: 1280px) {
-        margin: auto 0 0 0;
-    }
 }
 
 .aboutButton {
     text-decoration: none;
     display: flex;
     margin-top: 32px;
+}
 
-    @media (min-width: 768px) {
-        margin-top: 80px;
+@media (min-width: 768px) {
+    .about {
+        padding: 80px 40px;
     }
 
-    @media (min-width: 1280px) {
+    .aboutWrapper {
+        width: 688px;
+    }
+
+    .aboutTitle {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 36px;
+        letter-spacing: 0.35px;
+        margin-bottom: 40px;
+    }
+
+    .aboutText {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .aboutFirstBlockText {
+        order: 1;
+    }
+
+    .aboutFirstImage {
+        order: 2;
+        margin: 16px auto;
+    }
+
+    .aboutSecondBlockText {
+        order: 1;
+    }
+
+    .aboutSecondImage {
+        order: 2;
+        margin: 16px auto 0;
+    }
+
+    .aboutButton {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .about {
+        padding: 100px 80px;
+    }
+
+    .aboutWrapper {
+        display: flex;
+        max-height: 767px;
+        justify-content: space-between;
+        width: 1120px;
+    }
+
+    .aboutTitle {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 80px;
+    }
+
+    .aboutFirstBlock {
+        width: 550px;
+    }
+
+    .aboutFirstImage {
+        width: 550px;
+        height: 403px;
+        margin: 24px 0 0 0;
+    }
+
+    .aboutSecondBlock {
+        width: 550px;
+    }
+
+    .aboutSecondImage {
+        margin: auto 0 0 0;
+    }
+
+    .aboutButton {
         margin-top: 100px;
     }
 }
