@@ -15,7 +15,7 @@ const ProgressBar = () => {
 	  refetchInterval: 60000,
 	});
 
-	let goal = '250 000';
+	const goal = '250 000';
 	const width = balance > 100 ? `${Math.floor((balance / 250000) * 98)}%` : '0%';
 	const formattedBalance = formatBalance(balance);
 
