@@ -4,6 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 .content {
@@ -32,10 +34,11 @@
   top: 140px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .content {
     padding: 100px 16px 67px;
   }
+
   .content::before,
   .content::after {
     width: 13px;
@@ -56,6 +59,7 @@
   .content {
     padding: 212px 20px 177px;
   }
+
   .content::before,
   .content::after {
     width: 22px;
@@ -79,7 +83,7 @@
   margin-bottom: 4px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .title {
     font-size: 48px;
     line-height: 1;
@@ -100,7 +104,7 @@
   margin-bottom: 16px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .subTitle {
     font-size: 32px;
     font-family: "Russo One", sans-serif;
@@ -134,7 +138,7 @@
   margin-right: 8px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .goal {
     font-size: 24px;
   }
@@ -143,7 +147,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 32px;
     font-weight: 900;
-   }
+  }
 
   .goal span:first-child {
     margin-left: 29px;
@@ -153,9 +157,9 @@
 
 @media screen and (min-width: 1280px) {
   .goal {
-   margin-bottom: 40px;
+    margin-bottom: 40px;
   }
-   }
+}
 
 .description {
   max-width: 489px;
@@ -164,7 +168,7 @@
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .description {
     font-size: 20px;
     font-weight: 600;
@@ -175,7 +179,7 @@
 
 @media screen and (min-width: 1280px) {
   .description {
-   margin-bottom: 66px;
+    margin-bottom: 66px;
   }
 }
 
@@ -205,17 +209,17 @@
   outline: none;
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
   .button {
     width: 265px;
     margin-left: -20px;
     font-size: 18px;
     padding: 21px 46px;
-     }
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .button {
     margin-left: -40px;
-      }
+  }
 }
