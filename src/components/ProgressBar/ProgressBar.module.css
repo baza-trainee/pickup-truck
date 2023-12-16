@@ -1,11 +1,15 @@
 .goal {
     padding: 64px 16px 8px;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .goal {
         padding: 80px 16px 0px;
     }
+}
 
-    @media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .goal {
         padding: 100px 16px 0px;
     }
 }
@@ -13,12 +17,16 @@
 .wrapper {
     margin: 0 auto;
     max-width: 288px;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .wrapper {
         max-width: 688px;
     }
+}
 
-    @media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .wrapper {
         max-width: 1120px;
     }
 }
@@ -29,16 +37,20 @@
     line-height: 120%;
     text-align: center;
     margin-bottom: 40px;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .title {
         font-size: 32px;
         font-weight: 600;
         line-height: 36px;
         letter-spacing: 0.35px;
         margin-bottom: 40px;
     }
+}
 
-    @media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .title {
         font-size: 40px;
         font-weight: 700;
         margin-bottom: 80px;
@@ -51,14 +63,18 @@
     flex-wrap: wrap;
     row-gap: 16px;
     justify-content: space-between;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .container {
         flex-direction: row;
         align-items: center;
         column-gap: 8px;
     }
+}
 
-    @media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .container {
         column-gap: 20px;
     }
 }
@@ -71,30 +87,36 @@
     width: 100%;
     height: 40px;
     border-radius: 5px;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .bar {
         order: 1;
         flex: 50%;
         height: 47px;
     }
+}
 
-    @media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .bar {
         height: 57px;
     }
-
 }
 
 .border {
     height: 40px;
     border-radius: 40px;
-    border: 4px solid #FC0;
-    background: #F4F4F4;
+    border: 4px solid var(--yellow);
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .border {
         height: 47px;
     }
+}
 
-    @media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .border {
         height: 57px;
     }
 }
@@ -104,17 +126,21 @@
     overflow: hidden;
     height: 28px;
     border-radius: 40px;
-    background: #FC0;
+    background: var(--yellow);
     top: 5%;
     left: 1%;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .fill {
         height: 31px;
         top: 10%;
         left: 1%;
     }
+}
 
-    @media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
+    .fill {
         height: 37px;
         top: 13%;
         left: 1%;
@@ -123,12 +149,13 @@
 
 .textLeft {
     order: 1;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .textLeft {
         order: 0;
     }
 }
-
 
 .textRight {
     order: 2;
@@ -140,8 +167,11 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 125%;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .textLeft,
+    .textRight {
         line-height: 200%;
         letter-spacing: 0.35px;
     }
@@ -149,19 +179,23 @@
 
 .label {
     margin-bottom: 4px;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .label {
         margin-bottom: 6px;
     }
 }
 
 .amount {
-    color: #1870C2;
+    color: var(--blue);
     font-size: 16px;
     font-weight: 700;
     line-height: 125%;
+}
 
-    @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+    .amount {
         font-size: 20px;
         line-height: 120%;
     }
