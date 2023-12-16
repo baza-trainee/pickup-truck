@@ -2,7 +2,10 @@ h2 {
   text-align: center;
   padding-bottom: 32px;
 }
-
+.important {
+  margin: 0 auto;
+  max-width: 1920px; 
+}
 .importantSlider {
   width: 100%;
   height: 100%;

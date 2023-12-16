@@ -15,11 +15,11 @@ import Slide5 from "../../assets/important/slide5.webp";
 const Important = () => {
   const settings = {
     infinite: true,
-    speed: 1000,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
   };
 
   return (

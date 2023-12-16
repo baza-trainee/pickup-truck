@@ -107,6 +107,7 @@
     height: 40px;
     border-radius: 40px;
     border: 4px solid var(--yellow);
+    background: var(--white);
 }
 
 @media screen and (min-width: 768px) {
@@ -121,18 +122,18 @@
     }
 }
 
-.fill {
+.cover {
     position: relative;
-    overflow: hidden;
-    height: 28px;
-    border-radius: 40px;
-    background: var(--yellow);
     top: 5%;
     left: 1%;
+    margin: auto 0;
+    border-radius: 40px;
+    height: 28px;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-    .fill {
+    .cover {
         height: 31px;
         top: 10%;
         left: 1%;
@@ -140,10 +141,30 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .fill {
+    .cover {
         height: 37px;
         top: 13%;
         left: 1%;
+    }
+}
+
+.fill {
+    position: relative;
+    overflow: hidden;
+    height: 28px;
+    border-radius: 40px;
+    background: var(--yellow);
+}
+
+@media screen and (min-width: 768px) {
+    .fill {
+        height: 31px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .fill {
+        height: 37px;
     }
 }
 

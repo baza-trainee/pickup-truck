@@ -14,7 +14,7 @@ const ProgressBar = () => {
 	const { data: balance } = useQuery(['accountBalance'], fetchAccountBalance, {
 	  refetchInterval: 60000,
 	});
-
+	
 	const goal = '250 000';
 	const width = balance > 100 ? `${Math.floor((balance / 250000) * 98)}%` : '0%';
 	const formattedBalance = formatBalance(balance);
@@ -31,7 +31,9 @@ const ProgressBar = () => {
 						</div>
 						<div className={styles.bar}>
 							<div className={styles.border}>
-								<div className={styles.fill} style={{ width: width }}></div>
+								<div className={styles.cover}>
+									<div className={styles.fill} style={{ width: width }}></div>
+								</div>
 							</div>
 						</div>
 						<div className={styles.textRight}>
