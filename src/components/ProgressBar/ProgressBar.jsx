@@ -1,3 +1,5 @@
+import Container from "../Container/Container";
+
 import { fetchAccountBalance } from '../../services/fetchAccountBalance';
 import { useQuery } from '@tanstack/react-query';
 import styles from './ProgressBar.module.css';
@@ -12,16 +14,16 @@ const formatBalance = (balance = 0) => {
 
 const ProgressBar = () => {
 	const { data: balance } = useQuery(['accountBalance'], fetchAccountBalance, {
-	  refetchInterval: 60000,
+		refetchInterval: 60000,
 	});
-	
+
 	const goal = '250 000';
 	const width = balance > 100 ? `${Math.floor((balance / 250000) * 98)}%` : '0%';
 	const formattedBalance = formatBalance(balance);
 
 	return (
 		<section id='goal' className={styles.goal}>
-			<div className={styles.wrapper}>
+			<Container>
 				<div className={styles.title}>Готуємось разом до нашої перемоги</div>
 				<div className={styles.progress}>
 					<div className={styles.container}>
@@ -42,8 +44,7 @@ const ProgressBar = () => {
 						</div>
 					</div>
 				</div>
-			</div>
-
+			</Container>
 		</section >
 	);
 };

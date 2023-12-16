@@ -14,23 +14,6 @@
     }
 }
 
-.wrapper {
-    margin: 0 auto;
-    max-width: 288px;
-}
-
-@media screen and (min-width: 768px) {
-    .wrapper {
-        max-width: 688px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .wrapper {
-        max-width: 1120px;
-    }
-}
-
 .title {
     font-size: 20px;
     font-weight: 700;
