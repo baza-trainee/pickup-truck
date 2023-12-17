@@ -8,7 +8,7 @@ import styles from "./SectionStrength.module.css";
 const SectionStrength = () => {
   return (
     <>
-      <section className={styles.section}>
+      <section id='fundraising' className={styles.section}>
         <Container>
           <h2 className={styles.title}>В єднанні - сила!</h2>
           <h3 className={styles.subTitle}>Розповідай друзям про збір</h3>
