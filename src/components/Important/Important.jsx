@@ -23,8 +23,8 @@ const Important = () => {
   };
 
   return (
-    <section className={styles.important}>
-      <h2>Чому це важливо?</h2>
+    <section id='important' className={styles.important}>
+      <h2 className={styles.title}>Чому це важливо?</h2>
       <div className={styles.importantWrap}>
         <Slider
           className={styles.importantSlider}
