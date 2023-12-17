@@ -57,7 +57,7 @@ const Important = () => {
             <div className={styles.importantApsoluteWrapper}>
               <div className={styles.importantItem}>
                 <IconFire />
-                <span>Можуть дістатися до будь-якої військової локації</span>
+                <span>Для виконання бойових завдань</span>
               </div>
               <div className={styles.importantItem}>
                 <IconSpeed />
