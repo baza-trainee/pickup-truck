@@ -14,14 +14,14 @@ const Hero = () => {
             <span className={styles.sum}>250 000 грн</span>
           </p>
           <p className={styles.description}>
-          Для 15 Бригади Оперативного Призначення НГУ "Кара-Даг"
+            Для 15 Бригади Оперативного Призначення НГУ "Кара-Даг"
           </p>
           <div className={styles.buttonWrapper}>
             <a
-              
+
               href="https://send.monobank.ua/jar/3dcSuvAawh"
               target="_blank"
-              rel="noopener noreferrer"className={styles.button}
+              rel="noopener noreferrer" className={styles.button}
             >
               <Button >ДОНАТ НА ПІКАП</Button>
             </a>
