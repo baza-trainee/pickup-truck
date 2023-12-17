@@ -14,7 +14,7 @@ const Hero = () => {
             <span className={styles.sum}>250 000 грн</span>
           </p>
           <p className={styles.description}>
-            Для 9-го полку оперативного призначення НГУ імені Богдана Завади
+          Для 15 Бригади Оперативного Призначення НГУ "Кара-Даг"
           </p>
           <div className={styles.buttonWrapper}>
             <a
