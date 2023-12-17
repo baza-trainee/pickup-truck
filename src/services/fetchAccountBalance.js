@@ -1,5 +1,5 @@
-const apiKey = 'u0iWDMcGGip1eMVAIdqf5HLbfX_jYhY17Ua5UoPvyPMg';
-const apiUrl = 'https://api.monobank.ua/personal/client-info';
+const apiKey =  process.env.VITE_APP_MONO_API_KEY;
+const apiUrl = process.env.VITE_APP_MONO_API_URL;
 
 export const fetchAccountBalance = async () => {
     const response = await fetch(apiUrl, {
@@ -14,7 +14,6 @@ export const fetchAccountBalance = async () => {
     }
 
     const data = await response.json();
-
     const balance = Math.floor(
         data.jars[0].balance / 100
     );
