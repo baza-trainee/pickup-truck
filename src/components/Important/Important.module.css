@@ -1,17 +1,21 @@
-h2 {
+.important {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding-top: 64px;
+}
+
+.title {
   text-align: center;
   padding-bottom: 32px;
 }
-.important {
-  margin: 0 auto;
-  max-width: 1920px; 
-}
+
 .importantSlider {
   width: 100%;
   height: 100%;
   overflow: hidden;
   z-index: -1;
 }
+
 .importantSlider img {
   height: 490px;
   object-fit: cover;
@@ -22,6 +26,7 @@ h2 {
   min-height: 490px;
   background: rgba(21, 21, 20, 0.6);
 }
+
 .importantApsolute {
   position: absolute;
   top: 50%;
@@ -29,6 +34,7 @@ h2 {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
+
 .importantApsoluteWrapper {
   display: flex;
   flex-direction: column;
@@ -40,6 +46,7 @@ h2 {
   font-weight: 700;
   line-height: 27px;
 }
+
 .importantItem {
   display: flex;
   flex-direction: column;
@@ -53,9 +60,14 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
+  .important {
+    padding-top: 80px;
+  }
+
   .importantWrap {
     position: relative;
   }
+
   .importantApsoluteWrapper {
     border-radius: 40px;
     padding: 46px 19px;
@@ -64,17 +76,22 @@ h2 {
     align-items: flex-start;
     gap: 20px;
   }
+
   .importantSlider img {
     width: 100%;
     height: auto;
   }
 
-  h2 {
+  .title {
     padding-bottom: 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  .important {
+    padding-top: 100px;
+  }
+
   .importantApsoluteWrapper {
     padding: 60px 19px;
     gap: 30px;
@@ -85,7 +102,7 @@ h2 {
     gap: 24px;
   }
 
-  h2 {
+  .title {
     padding-bottom: 100px;
   }
 }

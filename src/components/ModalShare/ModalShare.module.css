@@ -129,6 +129,7 @@
 }
 
 .linkCopy {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -136,17 +137,27 @@
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.25;
-	border-bottom: 1px solid var(--yellow);
 	padding-bottom: 4px;
 	max-width: 244px;
 	margin: 0 auto;
 	cursor: pointer;
+}
+
+.linkCopy::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--yellow);
 	transition: var(--transition);
 }
 
-.linkCopy:hover,
-.linkCopy:focus {
-	transform: scale(1.1);
+.linkCopy:hover::after,
+.linkCopy:focus::after {
+	height: 3px;
+
 }
 
 @media screen and (min-width: 768px) {

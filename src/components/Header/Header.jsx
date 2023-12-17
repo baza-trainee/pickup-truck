@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 import { Link } from "react-scroll";
 import MobileMenu from "./MobileMenu/MobileMenu";
 import { useState } from "react";
-import LogoImg from "../../assets/Logo.svg";
+import LogoImg from "../../assets/logo.svg"; 
 import { FiMenu } from "react-icons/fi";
 
 const Header = () => {
