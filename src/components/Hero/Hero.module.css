@@ -4,6 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .content {
@@ -32,7 +34,7 @@
   top: 140px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .content {
     padding: 100px 16px 67px;
   }
@@ -79,7 +81,7 @@
   margin-bottom: 4px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .title {
     font-size: 48px;
     line-height: 1;
@@ -98,9 +100,11 @@
 .subTitle {
   font-size: 16px;
   margin-bottom: 16px;
+  text-align: left;
+  padding: 0;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .subTitle {
     font-size: 32px;
     font-family: "Russo One", sans-serif;
@@ -134,7 +138,7 @@
   margin-right: 8px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .goal {
     font-size: 24px;
   }
@@ -143,7 +147,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 32px;
     font-weight: 900;
-   }
+  }
 
   .goal span:first-child {
     margin-left: 29px;
@@ -153,9 +157,9 @@
 
 @media screen and (min-width: 1280px) {
   .goal {
-   margin-bottom: 40px;
+    margin-bottom: 40px;
   }
-   }
+}
 
 .description {
   max-width: 489px;
@@ -164,7 +168,7 @@
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .description {
     font-size: 20px;
     font-weight: 600;
@@ -175,47 +179,26 @@
 
 @media screen and (min-width: 1280px) {
   .description {
-   margin-bottom: 66px;
+    margin-bottom: 66px;
   }
 }
 
-.button {
-  display: inline-block;
-  text-align: center;
-  width: 288px;
-  margin-left: -16px;
-  color: var(--black);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-  border-radius: 40px;
-  background: var(--yellow);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 16px 67px;
-  transition: var(--transition);
-  white-space: nowrap;
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+ 
 }
 
-.button:hover,
-.button:active,
-.button:focus {
-  background: var(--orange);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  outline: none;
-}
-
-@media screen and (min-width: 768px) { 
-  .button {
-    width: 265px;
-    margin-left: -20px;
-    font-size: 18px;
-    padding: 21px 46px;
-     }
+@media screen and (min-width: 768px) {
+  .buttonWrapper {
+    justify-content: flex-start;
+    margin-left: -25px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .button {
+  .buttonWrapper {
     margin-left: -40px;
-      }
+  }
 }
+

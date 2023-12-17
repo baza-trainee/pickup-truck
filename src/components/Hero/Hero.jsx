@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import Container from "../Container/Container";
 import styles from "./Hero.module.css";
 
@@ -15,15 +16,16 @@ const Hero = () => {
           <p className={styles.description}>
             Для 9-го полку оперативного призначення НГУ імені Богдана Завади
           </p>
-
-          <a
-            className={styles.button}
-            href="https://send.monobank.ua"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Донат на пікап
-          </a>
+          <div className={styles.buttonWrapper}>
+            <a
+              
+              href="https://send.monobank.ua/jar/vuWRhTsv5"
+              target="_blank"
+              rel="noopener noreferrer"className={styles.button}
+            >
+              <Button >ДОНАТ НА ПІКАП</Button>
+            </a>
+          </div>
         </div>
       </Container>
     </section>
