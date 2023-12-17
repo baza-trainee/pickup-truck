@@ -47,7 +47,7 @@ const About = () => {
         </div>
       </div>
       <a
-        href="https://send.monobank.ua/jar/vuWRhTsv5"
+        href="https://send.monobank.ua/jar/3dcSuvAawh"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.aboutButton}

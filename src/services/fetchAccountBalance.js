@@ -1,4 +1,4 @@
-const apiKey = 'uzvo16z93T_gky7cYA0Bp3Q6ZfqzpZxl7--CXKbebcb0';
+const apiKey = 'u0iWDMcGGip1eMVAIdqf5HLbfX_jYhY17Ua5UoPvyPMg';
 const apiUrl = 'https://api.monobank.ua/personal/client-info';
 
 export const fetchAccountBalance = async () => {
